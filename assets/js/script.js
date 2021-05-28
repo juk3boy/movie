@@ -31,7 +31,11 @@ function searchMovie() {
                     $('#movie-list').append(`
                         <div class="col-md-4"
                             <div class="card mb-3">
-                                <img class="card-img-top" src="`+ data.Poster + `" alt="Card image cap">
+                              <div class="row">
+                              <div class="col-md-4">
+                                <img class="card-img-top" src="`+ data.Poster + `">
+                              </div>
+                                </div>
                                     <div class="card-body">
                                         <h5 class="card-title">`+ data.Title + `</h5>
                                         <h6 class="card-subtitle mb-2 text-muted">`+ data.Year + `</h6>
